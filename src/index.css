@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header, nav, .navItem, .Auth, .AuthItem{
+  display: flex;
+}
+
+header{
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.LinkDefault{
+  text-decoration: none;
+  color: black;
+}
+.Logo{
+  margin: 10px;
+}
+nav{
+  width: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navItem, .AuthItem{
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  
+}
+.navItem{
+  width: 150px;
+}
+
+
+.navItem .LinkDefault:hover{
+  color: rgb(247, 129, 12);
+}
+.navItem img{
+  margin-right: 10px;
+  color: brown;
+}
+.navItem:hover, .AuthItem:hover{
+  cursor: pointer;
+}
+.Auth{
+  border: 0.5px solid rgba(0, 0, 0, 0.932);
+  margin-right: 10px;
+}
+.Register{
+  background-color: rgb(77, 18, 97);
+  color: white;
+}
+.Register:hover{
+  background-color: rgb(5, 1, 12);
+}
+
+main{
+  padding-top: 100px;
+  padding-inline: 20px;
+}
+
+.userInputforPrediction {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.userInputforPrediction form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: max-content;
+}
+
+.userInputforPrediction label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.userInputforPrediction input {
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.userInputforPrediction button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-inline: 400px
+}
